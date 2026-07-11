@@ -17,10 +17,8 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
-
+  This project is on re-designing a basic testimonial webpage. I tests the prgrammers ability to re-design pages in detail.
 ### The challenge
 
 Users should be able to:
@@ -29,15 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot.png)
+  ## Mobile design screenshots
+    ![alt text](image.png)
+    ![alt text](image-1.png)
+    ![alt text](image-2.png)
+    ![alt text](image-3.png)
 
 ### Links
 
@@ -45,6 +40,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
+  With this project i feel my understanding of Html and css reaching a new level. Am a step closer to intermediate level.
 
 ### Built with
 
@@ -53,70 +49,55 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
 - [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+I now have a better understanding of how using rem and em instead of px in your web-segn improve the responviseness of the page on different screen sizes. This also helped me in further understanding disply grid and flex.
+examples: 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+    .body {
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+        
+    }
+    .section {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 1.25rem;
+        margin-bottom: 2rem;
+        padding: 0;
+    }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+i feel i am not confortable with htnl and css. I would like to move on to javascript and grow towards being a full stack deeveloper.
 
 ### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+diplay layout helped and i will be using them going further.
 
 ### AI Collaboration
 
 Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
 
 - What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
+  The this project, i used chatgpt for ratting my code after i was done and then after the ratting i was able to identify that i needed to improve the programming a bit to get it to be as responsive as it can be.
 - How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
+  I used it for ratting the program. Basically identifying where i could do better.
 - What worked well? What didn't?
-
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+  The ratting worked well because it helped me identify areas that neede improvement.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Mazmigo](http://127.0.0.1:5500/proj-7/index.html)
+- Frontend Mentor - [@EmmanuelMahuwa] (https://www.frontendmentor.io/profile/EmmanuelMahuwa)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+I would not have gotten this far in my design without previous knowledge i aquired from Frontend mentor.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
 # Testimonial-grid

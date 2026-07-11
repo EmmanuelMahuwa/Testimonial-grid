@@ -1,41 +1,53 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p {
+    margin: 0;
+}
 body {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    padding-right: 10%;
-    padding-left: 10%;
+    padding: 5rem;
 }
 main {
-    padding:10%;
-    margin-bottom: 10%;
-    border-radius: 1.25rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
     box-shadow:
-        0 -1.5rem 1.75rem hsl(0, 0%, 90%),
+        0 -0.5rem 1.75rem hsl(0, 0%, 90%),
         10rem 0 3rem hsl(0, 0%, 81%),
-        0 2.25rem 1.75rem hsl(0, 0%, 90%);
+        0 0.25rem 1.75rem hsl(0, 0%, 90%);
       
 }
 section {
     display: flex;
     justify-content: start;
     align-items: center;
-    gap:1%;
-    margin-bottom: 3%;
-    padding: 2%;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+    padding: 0;
 }
 .author-name {
     margin-bottom: 0.5rem;
 }
 img {
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
 }
-p {
-    margin: auto;
-}
+
 .testimonial-intro {
     font-weight: bold;
-    font-size: 1.25rem;
-    margin-bottom: 8%;
+    font-size: 1rem;
+    margin-bottom: 1rem;
 }
 .testimonial-1 {
     background-color: hsl(263, 55%, 52%);
@@ -43,12 +55,57 @@ p {
 .testimonial-2 {
     background-color: hsl(217, 19%, 35%);
 }
-.testimonial-3 {
+.testimonial-3, .testimonial-5 {
     background-color: hsl(0, 0%, 100%);
 }
 .testimonial-4 {
     background-color: hsl(219, 29%, 14%);
 }
-.testimonial-5 {
-    background-color: hsl(0, 0%, 100%);
+
+
+@media (min-width: 48rem) {
+    body {
+        padding: 5rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 2rem;
+        
+    }
+    main {
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow:
+        0 2.25rem 1.75rem hsl(0, 0%, 90%),
+        10rem 0 3rem hsl(0, 0%, 81%),
+        0 -1.5rem 1.75rem hsl(0, 0%, 90%);
+      
+    }
+    .testimonial-intro {
+        font-size: 1.25rem;
+ 
+    }
+    .testimonial-1 {
+   
+    grid-column: span 2;
+
+    }
+
+    .testimonial-2 {
+        grid-column: 3;
+    }
+    .testimonial-3 {
+        grid-column: 1;
+    }
+    .testimonial-4 {
+        grid-column: 2/span 2;
+    }
+    .testimonial-5 {
+        grid-column: 4;
+        grid-row: 1 / span 2;
+        box-shadow:
+            
+            5rem 10 5rem hsl(0, 0%, 81%),
+            -2 5rem 1rem hsl(0, 0%, 90%);
+    }
 }
